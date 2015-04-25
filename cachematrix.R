@@ -1,8 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Matrix object structure to cache the inverse function
 
-## Write a short comment describing this function
-
+## Builder for the cached inverse matrix
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
 	set <- function(y) {
@@ -16,14 +14,15 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Function to get the inverse through a cache so it doesnt get calculated every time
 cacheSolve <- function(x, ...) {
     m <- x$getinverse()
+    ## If operation is cached return the result from the cache
     if (!is.null(m)) {
     	message("getting cached data")
     	return(m)
     }
+    ## If not, get the inverse, add it to the cache and returns the result
     data <- x$get()
     m <- solve(data)
     x$setinverse(m)
