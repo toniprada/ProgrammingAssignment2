@@ -1,0 +1,136 @@
+install(¨KernSmooth¨)
+install.packages(¨KernSmooth¨)
+install
+install.packages()
+install.packages(¨ KernSmooth ¨)
+install.packages(¨KernSmooth¨)
+install.packages(KernSmooth)
+install.packages()
+install.packages("ks-package")
+install.packages("kernsmooth")
+install.packages("KernSmooth")
+search()
+library("KernSmooth")
+dir()
+cachematrix
+makeCacheMatrix <- function(x = matrix()) {#
+	m <- NULL#
+	set <- function(y) {#
+		x <<- y#
+		m <<- NULL#
+	}#
+	get <- function() x#
+	setinverse <- function(inverse) m <<- inverse#
+	getinverse <- function() m#
+	list(set=set, get=get, setinverse=setinverse, getinverse=getinverse) #
+}#
+## Write a short comment describing this function#
+#
+cacheSolve <- function(x, ...) {#
+    m <- x$getinverse()#
+    if (!is.null(m)) {#
+    	message("getting cached data")#
+    	return(m)#
+    }#
+    data <- x$get()#
+    m <- solve(x)#
+    x$xsetinverse(m)#
+    m#
+}
+matrix(1:100,20, 5)
+a <- makeCacheMatrix(matrix(1:100,20, 5))
+cacheSolve(a)
+cacheSolve(a)
+matrix(1:100,20, 5)
+matrix(c(1:100),20, 5)
+a <- makeCacheMatrix(matrix(c(1:100),20, 5))
+matrix(c(1:100),20, 5)
+cacheSolve(a)
+matrix([1]*100,20, 5)
+matrix(c(1,1,1,1),20, 5)
+cacheSolve(a)
+matrix(c(1,1,1,1),5, 5)
+matrix(c(1,1,1,1),10, 10)
+cacheSolve(a)
+a <- makeCacheMatrix(matrix(c(1:100),20, 5))
+cacheSolve(a)
+solve??
+?
+}}}}}
+solve?
+}
+solve
+solve()?
+}
+x = matrix(1:4, 2, 2)
+x
+solve(x)
+a <- makeCacheMatrix(matrix(1:4, 2, 2))
+cacheSolve(a)
+debug()
+debug(cacheSolve(a))
+debug(cacheSolve)
+n
+n
+browse()
+traceback()
+cacheSolve(a)
+n
+n
+n
+data
+n
+m
+x
+x
+n
+n
+cacheSolve(a)
+n
+n
+n
+x
+stop
+stop
+cacheSolve(a)
+n
+n
+n
+n
+n
+n
+cacheSolve <- function(x, ...) {#
+    m <- x$getinverse()#
+    if (!is.null(m)) {#
+    	message("getting cached data")#
+    	return(m)#
+    }#
+    data <- x$get()#
+    m <- solve(data)#
+    x$xsetinverse(m)#
+    m#
+}
+cacheSolve <- function(x, ...) {#
+    m <- x$getinverse()#
+    if (!is.null(m)) {#
+    	message("getting cached data")#
+    	return(m)#
+    }#
+    data <- x$get()#
+    m <- solve(data)#
+    x$xsetinverse(m)#
+    m#
+}
+cacheSolve(a)
+cacheSolve <- function(x, ...) {#
+    m <- x$getinverse()#
+    if (!is.null(m)) {#
+    	message("getting cached data")#
+    	return(m)#
+    }#
+    data <- x$get()#
+    m <- solve(data)#
+    x$xsetinverse(m)#
+    m#
+}
+cacheSolve(a)
